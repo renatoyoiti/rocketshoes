@@ -14,7 +14,6 @@
 An E-commerce application for shoe sale.
 It was built to practice the concepts of **redux** and **redux-saga** and how to configure them, and how to manage global states.
 
-
 <div align=center>
   <img src=.github/home-page.png width=350 alt="Home Page" title="Home Page" />
   <img src=.github/toast-message.png width=350 alt="Showing toast error message" title="Toast Message" />
