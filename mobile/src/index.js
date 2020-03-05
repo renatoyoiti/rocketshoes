@@ -7,16 +7,16 @@
  */
 
 import React from 'react';
+import 'react-native-gesture-handler';
 import { StatusBar, View, Text } from 'react-native';
 
-// import { Container } from './styles';
+import Routes from './routes';
 
-const App = () => {
+export default function App() {
   return (
     <>
       <StatusBar barStyle="light-content" backgroundColor="#191920" />
+      <Routes />
     </>
   );
-};
-
-export default App;
+}
