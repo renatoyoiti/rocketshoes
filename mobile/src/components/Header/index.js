@@ -11,7 +11,6 @@ import {
 } from './styles';
 
 export default function Header({ navigation }) {
-  console.tron.log('Header');
   return (
     <Wrapper>
       <Container>

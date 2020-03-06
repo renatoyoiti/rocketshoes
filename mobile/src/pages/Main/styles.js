@@ -19,7 +19,8 @@ export const Product = styled.View`
 `;
 
 export const ProductImage = styled.Image`
-  align-self: center;
+  height: 200px;
+  width: 200px;
 `;
 
 export const ProductName = styled.Text`
