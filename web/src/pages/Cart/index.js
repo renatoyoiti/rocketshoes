@@ -24,7 +24,6 @@ function Cart({ cart, total, removeFromCart, updateAmountRequest }) {
 
   return (
     <Container>
-      {console.tron.log(cart)}
       {cart.length === 0 ? (
         <Empty>
           <MdRemoveShoppingCart size={70} color="#bcbcbc" />
