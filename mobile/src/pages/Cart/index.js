@@ -27,6 +27,7 @@ import {
   CheckOutButtonText,
   EmptyContainer,
   EmptyText,
+  RemoveButton,
 } from './styles';
 
 import tenis from '../../assets/images/tenis1.jpg';
@@ -35,14 +36,19 @@ function Cart({
   navigation,
   products,
   total,
-  removeFromCart,
   updateAmountRequest,
+  removeFromCart,
 }) {
   function decrement(product) {
     updateAmountRequest(product.id, product.amount - 1);
   }
+
   function increment(product) {
     updateAmountRequest(product.id, product.amount + 1);
+  }
+
+  function handleDeleteItem(id) {
+    removeFromCart(id);
   }
 
   return (
@@ -58,6 +64,9 @@ function Cart({
                     <ProductTitle> {product.title}</ProductTitle>
                     <ProductPrice>{product.priceFormatted}</ProductPrice>
                   </ProductDetails>
+                  <RemoveButton onPress={() => handleDeleteItem(product.id)}>
+                    <Icon name="delete" size={24} color="#333" />
+                  </RemoveButton>
                 </ProductInfo>
                 <ProductControls>
                   <ProductControlButton onPress={() => decrement(product)}>

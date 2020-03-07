@@ -126,3 +126,5 @@ export const EmptyText = styled.Text`
   font-weight: bold;
   margin-top: 18px;
 `;
+
+export const RemoveButton = styled.TouchableOpacity``;
