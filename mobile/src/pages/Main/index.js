@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FlatList } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -79,3 +80,12 @@ export default function Main(props) {
     </Container>
   );
 }
+
+Main.propTypes = {
+  item: PropTypes.shape({
+    id: PropTypes.number,
+    image: PropTypes.string,
+    title: PropTypes.string,
+    priceFormatted: PropTypes.string,
+  }).isRequired,
+};

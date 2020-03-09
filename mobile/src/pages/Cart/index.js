@@ -1,6 +1,6 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { connect, useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import colors from '../../styles/colors';
 import * as CartActions from '../../store/modules/cart/actions';
@@ -29,7 +29,7 @@ import {
   RemoveButton,
 } from './styles';
 
-export default function Cart({ navigation }) {
+export default function Cart() {
   const products = useSelector(state =>
     state.cart.map(product => ({
       ...product,
